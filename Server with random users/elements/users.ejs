@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Main</a>
+    <a href="/users">Users</a>
+    <a href="/max-following">Max-following</a>
+    <a href="/not-following">Not-following</a>
+    <h1 id = 'users'>Users</h1>
+    <ul>
+    <% users.forEach(user =>{ %>
+        <li>
+            <h1><a href="/<%= user.id %>"> <%= user.name %></a></h1>
+            <h3> <%= user.sex %> </h3>
+        </li>
+    <% }) %>
+    </ul>
+</body>
+</html>

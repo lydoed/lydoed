@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= x.id %></title>
+</head>
+<body>
+    <a href="/">Main</a>
+    <a href="/users">Users</a>
+    <a href="/max-following">Max-following</a>
+    <a href="/not-following">Not-following</a>
+    <h1 id = 'users'>User</h1>
+    <h2> User ID:<%= x.id %> </h2>
+    <h2> User Name:<%= x.name %> </h2>
+    <h2> User Sex:<%= x.sex %> </h2>
+    <h2> User Subscribes:<%= x.Subscribes[0].subs %> </h2>
+    <% if(x.Friends){ %>
+    <h2> User Friends:<%= x.Friends[0].fri %> </h2>
+    <% }else{ %>
+        <h2>User doesn`t have friends :(</h2>
+    <% } %>
+
+</body>
+</html>
